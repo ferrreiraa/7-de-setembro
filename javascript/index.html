@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sete de Setembro</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <script src="teste.js"></script>
+</head>
+<body>
+   
+    <h1>O turismo em Curitiba</h1>
+<h2>Seis dos 15 principais destinos turísticos do Sul do Brasil estão no Paraná.
+  Venha saber mais sobre.
+</p>
+<div id="textos">
+<p id="txt01"style="display:none">
+Ranking das cidades mais procuradas por quem deseja visitar a região foi divulgado em 2018 pelo site especializado Viajando com a Expedia.
+
+Curitiba lidera a lista, seguida por Foz do Iguaçu, terra das Cataratas, na segunda colocação.
+
+O levantamento destaca o potencial da capital paranaense com um roteiro que mistura história e gastronomia. 
+
+Curitiba ganhou destaque também pela proximidade e facilidade de acesso a outros pontos turísticos próximos, 
+
+que que podem ser visitados num mesmo dia de passeio, como Morretes e Antonina, que ficam no litoral, por um trem que corta a Serra do mar.
+
+Curitiba é também o terceiro destino de negócios no Brasil mais procurado por estrangeiros (atrás de Rio de Janeiro e São Paulo), 
+
+de acordo com a Demanda Turística Internacional, pesquisa realizada pelo Ministério do Turismo e a Fundação Instituto de Pesquisas Econômicas (Fipe) e divulgada em 2019. 
+
+O estudo também mostra que 95,9% dos visitantes para negócios chegam a Curitiba por via aérea e apenas 4,1% por via terrestre.
+
+Para Tatiana Turra, presidente do Instituto Municipal de Turismo, o resultado é um reconhecimento ao bom trabalho feito e à qualidade do receptivo. 
+
+“Temos várias ações para impulsionar o turismo de negócios e eventos e os números revelam que estamos no caminho certo”, disse ela. 
+
+Curitiba conta com uma excelente infraestrutura para eventos com espaços para até sete mil pessoas, hotelaria de qualidade com 20 mil leitos, 
+
+além de uma extensa e variada oferta gastronômica, atrativos turísticos, e ainda incentivo fiscal para atrair novos parceiros.
+
+Que tal visitar Curitiba em suas próximas férias? Confira abaixo algumas das principais atrações turísticas da cidade.
+                          
+</div>
+
+<button type="button" onclick="document.getElementById('txt01').style.display='block'">Saiba mais</button>
+<button type="button" onclick="document.getElementById('txt01').style.display='none'">Ocultar</button>
+
+       <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="BOSQUE ALEMÃO"><img src="img/bos-do-alemao-curitiba-768x384.jpg"alt=""></div>
+    <div class="ÓPERA DE ARAME/ PARQUE DAS PEDREIRAS"><img src="img/opera-de-arame-curitiba.jpg" alt=""></div>
+    <div class="JARDIM BOTÂNICO"><img src="img/shutterstock_49330042-1024x515.jpg" alt=""></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+
+</body>
+</html>
